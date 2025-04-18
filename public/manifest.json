@@ -1,0 +1,15 @@
+
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Profile Enhancer Widget",
+  "version": "1.0.0",
+  "description": "Enhances LinkedIn profiles with additional company insights",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.linkedin.com/in/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
